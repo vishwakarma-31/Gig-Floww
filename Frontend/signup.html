@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | GigFloww</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./signup.css">
+    <script src="/Backend/signup.js"></script>
+</head>
+    <body>
+        <section class="signup-section" id="signup">
+            <h2>Sign Up as a Gig Worker</h2>
+            <form id="signupForm" onsubmit="return validateForm(event)">
+                <input type="text" id="name" placeholder="Full Name" />
+                <div class="error" id="nameError">Please enter a valid name.</div>
+                <input type="email" id="email" placeholder="Email Address" />
+                <div class="error" id="emailError">Please enter a valid email address.</div>
+                
+                <select id="category">
+                    <option value="">Select Skill Category</option>
+                    <option value="Design">Design</option>
+                    <option value="Development">Development</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Writing">Writing</option>
+                </select>
+
+                <div class="error" id="categoryError">Please select a skill category.</div>
+
+                <input type="url" id="portfolio" placeholder="Portfolio Link (e.g., https://example.com)" />
+                <div class="error" id="portfolioError">Please enter a valid portfolio link.</div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </body>
+</html>
